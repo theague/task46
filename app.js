@@ -16,9 +16,9 @@ console.log(donaldDuck.name); // Dot notation
 donaldDuck["canFly"] = false;
 
 //Step 4 add a new method
-donalDuck.say = () => "DACK DACK! Is this what a duck sounds like?";
+donaldDuck.say = () => "DACK DACK! Is this what a duck sounds like?";
 
-console.log(donalDuck.say());
+console.log(donaldDuck.say());
 
 //Step 5 add another method
 donaldDuck.sayHello = function () {
