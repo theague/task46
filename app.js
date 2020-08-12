@@ -5,23 +5,20 @@ const donaldDuck = {
     nickname: 'Don',
     species: 'Duck',
     gender: 'Male',
-    significantOther: 'Daisy Duck'
-
+    significantOther: 'Daisy Duck',
 };
+
+
 //Step 2 print name to console
-console.log(donaldDuck.name);
+console.log(donaldDuck.name); // Dot notation
 
 //Step 3 add a new property
-donaldDuck.canFly = false;
+donaldDuck["canFly"] = false;
 
 //Step 4 add a new method
-const dack = {
-    say() {
-        return "DACK DACK! Is this what a duck sounds like?";
-    }
-};
+donalDuck.say = () => "DACK DACK! Is this what a duck sounds like?";
 
-console.log(dack.say());
+console.log(donalDuck.say());
 
 //Step 5 add another method
 donaldDuck.sayHello = function () {
@@ -37,12 +34,10 @@ donaldDuck.name = "Duck McDuckFace";
 donaldDuck.sayHello();
 
 //Step 8 add another method with if/else
-donaldDuck.fly = function() {
-    if (this.canFly == true) {
-    console.log("I can fly!");
-    } else {
-    console.log("No flying for me!")
-    }
+donaldDuck.fly = function() { // I refactored it to use a ternary operator
+    this.canFly // this.canFly === true
+    ? console.log("I can fly!");
+    : console.log("No flying for me!")
 };
 
 // Step 9 call the method
